@@ -1,0 +1,69 @@
+/* Body CSS for background */
+body {
+    background: linear-gradient( #ff0000, #0000ff);
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+/* CSS for the background of the calculator */
+main {
+    width: 600px;
+    height: 852px;
+    background-color: grey;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    margin: auto;
+}
+/* input styling css */
+input {
+    all: none;
+    width: calc(100% - padding);
+    height: 110px;
+    font-size: 45px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    padding: 10px;
+    margin: 10px;
+    /* margin: auto; */
+}
+/* Button CSS */
+button {
+    /* all: none; */
+    height: 130px;
+    width: 130px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    font-size: 45px;
+    margin: auto;
+}
+.advClass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.disClass {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button:hover {
+    background-color: darkgrey;
+}
+/* Grid CSS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 10px;
+}
+.rollButton {
+    grid-column: 1 / -1;
+    width: calc(100% - 20px);
+}
