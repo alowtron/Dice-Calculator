@@ -10,9 +10,8 @@
 <body>
     
 <main>
-    <form action="roll.php" method="post">
     <input type="text" placeholder="1d20+5" id="rollInput">
-    </form>
+    
     <div class="grid">
         <button value="7" onclick="addValue(this.value)">7</button>
         <button value="8" onclick="addValue(this.value)">8</button>
@@ -30,20 +29,21 @@
         <button value="+" onclick="addValue(this.value)">+</button>
 
         <div id="advClass" class="advClass">
-            <button value="false" onclick="advToggle(this.value)">Adv.</button>
+            <button value="false" onclick="advToggle(this.value)" id="advData">Adv.</button>
         </div>
         <button value="0" onclick="addValue(this.value)">0</button>
         <div id="disClass" class="disClass">
-            <button value="false" onclick="disToggle(this.value)">Dis.</button>
+            <button value="false" onclick="disToggle(this.value)" id="disData">Dis.</button>
         </div>
         <button class="disClass" value="d" onclick="addValue(this.value)">d</button>
 
-        
-        <button type="submit" value="roll" class="rollButton">Roll</button>
-        
+        <button type="submit" value="roll" class="rollButton" onclick="rollCall()">Roll</button>
     </div>
 
 </main>
-    
+<!-- <?php
+require 'roll.php';
+?> -->
 </body>
+
 </html>

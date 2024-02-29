@@ -66,4 +66,7 @@ button:hover {
 .rollButton {
     grid-column: 1 / -1;
     width: calc(100% - 20px);
+    /* width: 100%; */
+    /* padding: 10px; */
+    /* margin: auto; */
 }
