@@ -31,7 +31,6 @@ function minusValue() {
 
 //submit the roll for processing
 function rollCall() {
-    console.log('temp')
     let inputData = document.getElementById("rollInput").value
     let advData = document.getElementById("advData").value
     let disData = document.getElementById("disData").value
